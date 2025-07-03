@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const flowbitePlugin = require('flowbite/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -17,5 +18,5 @@ module.exports = {
         },
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [require('@tailwindcss/forms'),flowbitePlugin],
 };
